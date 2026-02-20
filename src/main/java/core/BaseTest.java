@@ -3,15 +3,15 @@ package core;
 import com.relevantcodes.extentreports.LogStatus;
 import helper.Helper;
 import io.restassured.RestAssured;
-import io.restassured.response.Response;
+import org.junit.BeforeClass;
 import org.testng.ITestResult;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import utiles.ExtentReport;
 
-import java.io.File;
 import java.io.IOException;
-
-import static io.restassured.RestAssured.given;
 
 public class BaseTest {
 

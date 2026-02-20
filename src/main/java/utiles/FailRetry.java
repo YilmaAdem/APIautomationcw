@@ -1,7 +1,7 @@
 package utiles;
 
-import org.testng.IRetryAnalyzer; // Importing the IRetryAnalyzer interface from TestNG framework
-import org.testng.ITestResult;// Importing the ITestResult interface from TestNG framework
+import org.testng.IRetryAnalyzer;
+import org.testng.ITestResult;
 
 // This class implements the IRetryAnalyzer interface to provide a mechanism for retrying failed test cases.
 public class FailRetry implements IRetryAnalyzer { // implementing the IRetryAnalyzer interface to create a custom

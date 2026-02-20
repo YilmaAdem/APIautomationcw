@@ -5,7 +5,7 @@ import org.testng.asserts.SoftAssert;
 public class SoftAssertionUtil {
 
     //changing to singleton pattern to ensure only one instance of SoftAssert is used throughout the tests
-   /* private SoftAssert softAssert;*/
+   //private SoftAssert softAssert;
 
     private static SoftAssert softAssertInstance;
     // private constructor to prevent instantiation
