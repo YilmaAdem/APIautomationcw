@@ -6,7 +6,7 @@
     </listeners>
     <test name="API Users TestCases">
         <classes>
-            <class name="UserManagement.getErgast" />
+            <class name="UserManagement.getUsers" />
         </classes>
     </test>
 </suite>
