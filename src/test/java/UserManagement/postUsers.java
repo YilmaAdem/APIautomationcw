@@ -25,7 +25,7 @@ public class postUsers {
     //since we are using the body again and again for different methods, we can create a method to read the body from JSON file
     // and return it as string and use that method in all the test cases
     //instead of writing the code again and again to read the body from JSON file and convert it to string
-   private static FileInputStream  fileInputStreamMethod(String postrequestfile) {
+   static FileInputStream  fileInputStreamMethod(String postrequestfile) {
         FileInputStream fileInputStream;
         try {
             fileInputStream = new FileInputStream(new File(System.getProperty("user.dir") +

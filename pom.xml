@@ -31,7 +31,7 @@
                 <version>3.2.5</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>resources\TestSuite\ClassSmokeSuite.xml</suiteXmlFile>
+                        <suiteXmlFile>resources\TestSuite\packageEndtEndSuite.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

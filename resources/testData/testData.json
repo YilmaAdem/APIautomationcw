@@ -1,18 +1,33 @@
 {
   "headerKey": "x-api-key",
   "headerValue": "reqres_c7637373bd1742b8be2ea1ff513d545f",
-
   "username": "postman",
   "password": "password",
-
   "endpoint": "users",
-  "language": ["java", "python", "csharp", "javascript", "ruby", "go", "php"],
-  "technology": ["AI", "ML", "Cloud", "DevOps", "Cybersecurity", "Data Science"],
-  "contact" : [
+  "language": [
+    "java",
+    "python",
+    "csharp",
+    "javascript",
+    "ruby",
+    "go",
+    "php"
+  ],
+  "technology": [
+    "AI",
+    "ML",
+    "Cloud",
+    "DevOps",
+    "Cybersecurity",
+    "Data Science"
+  ],
+  "contact": [
     "e-mail:yilma.mek@gmail.com",
     "phone:123-456-7890",
     "address:123 Main St",
     "city : coon Rapids",
     "country:USA"
-    ]
+  ]
+
+
 }

@@ -18,7 +18,6 @@ public class BuilderPatternImplementation {
     // for our API requests, making our test code cleaner and more maintainable.
 
     private ResponseSpecification responseSpec; // provided by rest assured to define the expected structure of the response, including status code, headers, and body content. It allows us to create a reusable specification for validating API responses, making our test code cleaner and more maintainable.
-
     // normal approach without using builder pattern. Compare it to below the builder pattern approach to see the difference in readability and maintainability of the code.
     @Test
     public void testRestAssuredNormalApproach() {
@@ -47,8 +46,10 @@ public class BuilderPatternImplementation {
                 .get("/posts")
                 .then()
                 .spec(getResponseSpecBuilder(200, "application/json"));// using the builder pattern to create a response specification
+        System.out.println("Response specification created using builder pattern");
 
     }
+
 
     //creating private method to build the request specification using the builder pattern,
     // this method takes parameters for query parameter, content type, header key and header value

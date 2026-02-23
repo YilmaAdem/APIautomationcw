@@ -1,0 +1,33 @@
+{
+  "from_country": "US",
+  "from_zip": "55303",
+  "from_state": "MN",
+  "from_city": "Anoka",
+  "from_street": "3753 Edith Patch Dr",
+  "to_country": "US",
+  "to_zip": "55402",
+  "to_state": "MN",
+  "to_city": "Minneapolis",
+  "to_street": "7600 Nicollet Mall",
+  "amount": 500,
+  "shipping": 5.00,
+  "nexus_addresses": [
+    {
+      "id": "Main Location",
+      "country": "US",
+      "zip": "55402",
+      "state": "MN",
+      "city": "Minneapolis",
+      "street": "7600 Nicollet Mall"
+    }
+  ],
+  "line_items": [
+    {
+      "id": "1",
+      "quantity": 1,
+      "product_tax_code": "20010",
+      "unit_price": 50,
+      "discount": 0
+    }
+  ]
+}

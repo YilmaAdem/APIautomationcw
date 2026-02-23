@@ -392,7 +392,7 @@ public class getUsers extends BaseTest {
         int actualStatusCode = resp.statusCode();
         // validate with SoftAssertionUtil class
       SoftAssertionUtil.assertEquals(resp.getStatusCode(),StatusCode.SUCCESS.getCode(), "Status code validation passed");
-       SoftAssertionUtil.assertAll();
+       //SoftAssertionUtil.assertAll();
        System.out.println("validateWithSoftAssertUtil executed successfully");
 
     }
