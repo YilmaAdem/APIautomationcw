@@ -137,7 +137,7 @@ public class postUsers {
         String headerKey = JsonReader.getTestData("headerKey"); // getting header key from JSON file
         String headerValue = JsonReader.getTestData("headerValue");// getting header value from JSON file
 
-        postRequestBody data = new postRequestBody();
+        postRequestBody data = new postRequestBody(); //creating an object of postRequestBody class to set the values for the fields in the class
         //converted the Java object to JSON format by using the setter methods of the postRequestBody class
         // and passing the values to the fields
         data.setFirst_name("Nahum");
@@ -217,7 +217,7 @@ public class postUsers {
         String job = "Professor";
         String first_name = "Nahum";
         String last_name = "Yilma";
-        postRequestBody patchRequest = new postRequestBody();
+        PatchResponseBody patchRequest = new PatchResponseBody();//
         patchRequest.setJob(job);
         patchRequest.setFirst_name(first_name);
         patchRequest.setLast_name(last_name);
