@@ -27,7 +27,15 @@
     "address:123 Main St",
     "city : coon Rapids",
     "country:USA"
-  ]
+  ],
+
+  "user": {
+
+    "name": "John Doe",
+
+    "job": "QA Engineer"
+
+  }
 
 
 }

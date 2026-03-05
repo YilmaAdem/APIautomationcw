@@ -1,0 +1,16 @@
+{
+  "book": [
+    {
+      "id": 1,
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "price": 45.99
+    },
+    {
+      "id": 2,
+      "title": "Design Patterns",
+      "author": "Erich Gamma",
+      "price": 55.50
+    }
+  ]
+}

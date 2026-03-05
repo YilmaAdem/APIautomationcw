@@ -55,7 +55,8 @@ public class BaseTest {
     }
 
     @AfterMethod(alwaysRun = true)
-    public void getResult(ITestResult result) {
+    public void getResult(ITestResult result) {// ITestResult is from testng. This method is executed after each test method and logs
+        // the result of the test case in the Extent Report.
         ExtentReport.extentlog = ExtentReport.extentreport.startTest(result.getName());
         if (result.getStatus() == ITestResult.SUCCESS) {
             ExtentReport.extentlog.log(LogStatus.PASS, "Test Case : "+ result.getName()+" is passed ");

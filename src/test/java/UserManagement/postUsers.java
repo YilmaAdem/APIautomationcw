@@ -79,8 +79,8 @@ public class postUsers {
         Response resp =
                 given().
                         headers(headerKey, headerValue). //example query param
-                        header("Content-Type", "application/json").
-                        body("{\"job\":\"Professor\"}")
+                        header("Content-Type", "application/json")
+                         .body("{\"job\":\"Professor\"}")
                         .when().
                         patch("https://reqres.in/api/users/2");
 

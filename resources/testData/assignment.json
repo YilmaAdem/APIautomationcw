@@ -1,0 +1,79 @@
+{"resume":[{
+
+  "id": 101,
+
+  "name": "Sidharth",
+
+  "email": "sidharth@example.com",
+
+  "isInstructor": true,
+
+  "courses": [
+
+    {
+
+      "courseId": "API-2025",
+
+      "title": "API Automation Testing with Playwright",
+
+      "duration": "10 hours",
+
+      "rating": 4.9,
+
+      "studentsEnrolled": 5200,
+
+      "topics": ["HTTP Methods", "Postman", "Playwright API", "Assertions"],
+
+      "price": {
+
+        "currency": "USD",
+
+        "amount": 49.99,
+
+        "discount": 20
+
+      }
+
+    },
+
+    {
+
+      "courseId": "JS-101",
+
+      "title": "JavaScript for Testers",
+
+      "duration": "8 hours",
+
+      "rating": 4.8,
+
+      "studentsEnrolled": 4800,
+
+      "topics": ["Variables", "Functions", "Async Await", "Promises"],
+
+      "price": {
+
+        "currency": "USD",
+
+        "amount": 39.99,
+
+        "discount": 15
+
+      }
+
+    }
+
+  ],
+
+  "socialLinks": {
+
+    "linkedin": "https://linkedin.com/in/sidharthshukla",
+
+    "youtube": "https://youtube.com/@automatewithsidharth",
+
+    "website": "https://sidharthshukla.com"
+
+  },
+
+  "skills": ["Automation Testing", "SDET", "Java", "Playwright", "AI for QA"]
+
+}]}

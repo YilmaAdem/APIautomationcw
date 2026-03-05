@@ -1,2 +1,8 @@
-package UserManagement;public class ParsingXMLResponse {
+package UserManagement;
+
+public class ParsingXMLResponse {
+
+    void testXMLResponseBodyData() {
+        
+    }
 }

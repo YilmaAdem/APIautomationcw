@@ -5,6 +5,7 @@ import org.apache.commons.io.FileUtils;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import pojo.RetrieveResponseBody;
 
 import java.io.File;
 import java.io.IOException;
@@ -48,4 +49,7 @@ public class JsonReader {
         return (T) array.get(index);
     }
 
+    public static RetrieveResponseBody getJsonData(File file) {
+        return null;
+    }
 }

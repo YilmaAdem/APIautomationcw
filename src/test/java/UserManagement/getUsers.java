@@ -182,7 +182,7 @@ public class getUsers extends BaseTest {
 /*
  Different ways to create POST request body:
     1. Using HashMap
-    2. Using POJO class
+    2. Using class
     3. POST request body  using org.json library to create JSON object and then convert it to string
     4. Using JSON file to read the request body and then convert it to string
 
