@@ -1,6 +1,5 @@
 package utiles;
 
-import freemarker.core.ParseException;
 import org.apache.commons.io.FileUtils;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -12,13 +11,13 @@ import java.io.IOException;
 
 public class JsonReader {
 
-    public static String getTestData(String input) throws IOException, ParseException, org.json.simple.parser.ParseException {
+    public static String getTestData(String input) throws IOException, org.json.simple.parser.ParseException {
         // Placeholder for JSON reading logic
         String testDataValue;
         return testDataValue = (String) getJsonData().get(input); //input is the key to fetch value from JSON
 
     }
-    public static JSONObject getJsonData() throws IOException, ParseException, org.json.simple.parser.ParseException {
+    public static JSONObject getJsonData() throws IOException, org.json.simple.parser.ParseException {
         // Placeholder for JSON reading logic and helps to read the JSON file and return the JSON object from test data.
         File filename = new File("resources//testData//TestData.json");
         String json = FileUtils.readFileToString(filename, "UTF-8"); // Read the file content into this string

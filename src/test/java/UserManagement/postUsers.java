@@ -178,7 +178,7 @@ public class postUsers {
                 given().
                         headers(headerKey, headerValue). //example query param
                         header("Content-Type", "application/json")
-                        .body(data)
+                        .body(data) //This comes from pojo  postRequestBody()
                         .when().
                         post("https://reqres.in/api/users");
         assertEquals(resp.getStatusCode(), StatusCode.Created.getCode());

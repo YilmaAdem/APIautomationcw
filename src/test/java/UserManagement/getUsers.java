@@ -33,7 +33,7 @@ import static utiles.JsonReader.getJsonArray;
 
 public class getUsers extends BaseTest {
     //SoftAssertionUtil softAssertion = new SoftAssertionUtil();
-
+    private String token;
     @DataProvider(name = "userData") // TestNG Data Provider example
     public Object[][] userData() {
         return new Object[][] {
@@ -83,6 +83,7 @@ public class getUsers extends BaseTest {
                 body("title", equalTo(
                         "sunt aut facere repellat provident occaecati excepturi optio reprehenderit"
                 ));
+         System.out.println("validateGetResponseBody executed successfully");
     }
 
     @Test
@@ -109,19 +110,39 @@ public class getUsers extends BaseTest {
     public void validateResponseHasSize() {
 // hasSize example . Total number of comments = 500
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
+        // Response is an interface from rest assured and we are using it to store the response of the GET request.
+        // We can then use this response object to extract data from the response and perform assertions on it.
 
         Response response =
                 given().
                         when().
                         get("/comments").
                         then().
-                        extract().
-                        response();
+                            extract().
+                            response();
 
         assertThat(
                 response.jsonPath().getList("").size(),
                 equalTo(500)
         );
+    }
+    @Test
+    public void setup() {
+        // Set base URI for the API
+        RestAssured.baseURI = "https://reqres.in/api";
+
+        // Authenticate and get an authorization token
+        Response response = given()
+                .header("Content-Type", "application/json")
+                     .body("{ \"email\": \"eve.holt@reqres.in\", \"password\": \"pistol\" }")
+                .when()
+                    .get("/login")
+                .then()
+                    .statusCode(403)
+                    .extract()
+                    .response();
+
+        token = response.jsonPath().get("token");
     }
 
 
@@ -200,10 +221,10 @@ public class getUsers extends BaseTest {
                 .header("Content-Type", "application/json")
                 .body(data)
                 .when()
-                .post("https://reqres.in/api/users")
+                  .post("https://reqres.in/api/users")
                 .then()
-                .statusCode(201)
-                .body("first_name", equalTo(data.get("first_name")))
+                   .statusCode(201)
+                  .body("first_name", equalTo(data.get("first_name")))
                 .log().all();
     }
     @Test
